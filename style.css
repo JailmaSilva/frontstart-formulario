@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'roboto', sans-serif;
     background-color: black;
 }
 * {
     box-sizing: border-box;
+    /* 
+ CORES
+ background: #EBEBEB;
+ cinza claro: #E4E4E4;
+ cinza inputs: #818181;
+ facebook: #375c98;
+ mail: #C54F33;
+ twitter: #4dadf2;
+*/
 }
 .form-container{
     background-color: white;
@@ -19,6 +30,7 @@ h3 {
 }
 form .input-container {
     position: relative;
+    margin-bottom: 15px;
 
 }
 form .input-container input, input[type="submit"]
@@ -27,18 +39,73 @@ form .input-container input, input[type="submit"]
     height: 45px;
     border-radius: 25px;
 }
-form .input-container input, input{
+
+form input[type="submit"] {
+    border: 0;
+    background: red;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px; }
+
+    form .input-container input {
     border: 1px solid;
-    color: grey;
-    padding: 25px;
+    color: #818181;
+    padding: 0 55px 0 25px;
+    font-size: 1rem;
 }
 form .input-container input, input::placeholder{
-    color: grey;
+    color: #818181;
 }
-svg{
+ form .input-container svg{
     position: absolute;
     right: 20px;
     top: calc(50% - 12px);
-    color: grey;
+    color: #818181;
     
+}
+.options-container .checkbox-container, .options-container a {
+ display: inline-block;   
+ width: 50%;
+}
+a {
+    text-align: left;
+    color: red;
+    text-decoration: none;
+}
+
+form p {
+    color: #818181;
+    text-align: center;
+}
+form .social-media-container {
+    margin: 20px auto;
+    width: fit-content;
+}
+form .social-media-container .icon-container{
+    background:  #375c98;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+form .social-media-container .icon-container:nth-child(2){
+    background: #C54F33 ;
+}
+form .social-media-container .icon-container:nth-child(3){
+    background: #4dadf2 ;
+}
+form .social-media-container .icon-container svg {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    color: white;
+}
+hr {
+    color: white;
+}
+
+.footer {
+    width: fit-content;
+    margin: 20px auto;
 }
